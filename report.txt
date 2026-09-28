@@ -1,39 +1,47 @@
-==========================================================================================
-                  Hotel Room Booking System - Summary Report                              
-==========================================================================================
-Generated At : 2026-09-23 14:51:01
-App Version  : 1.0 (Python Standard Library - Fixed-Length Binary Struct)
-Endianness   : Little-Endian (<)
-Encoding     : UTF-8
-------------------------------------------------------------------------------------------
+Hotel Reservation System - Summary Report (Sample)
+Generated At : 2026-09-28 06:13:50
+App Version  : 1.0
+Endianness   : Little-endian
+Encoding     : UTF-8 (fixed-length)
+====================================================================================================
+| RoomID | RoomNum | Room Type            | Category | Price (THB) | Status | Booked Status |
+====================================================================================================
+| 1001   | A101    | Superior Single      | Standard | 1,200.00    | Active | Booked        |
+| 1002   | A102    | Superior Double      | Standard | 1,500.00    | Active | Available     |
+| 1003   | A103    | Superior Twin        | Standard | 1,500.00    | Active | Booked        |
+| 1004   | A104    | Deluxe Ocean View    | VIP      | 2,500.00    | Active | Available     |
+| 1005   | A105    | Deluxe Corner        | VIP      | 2,800.00    | Active | Booked        |
+| 1006   | A201    | Superior Single      | Standard | 1,200.00    | Active | Available     |
+| 1007   | A202    | Superior Double      | Standard | 1,500.00    | Active | Booked        |
+| 1008   | A203    | Executive Suite      | VIP      | 3,800.00    | Active | Available     |
+| 1009   | A204    | Executive Suite      | VIP      | 3,800.00    | Active | Booked        |
+| 1010   | A205    | Presidential Suite   | Luxury   | 8,500.00    | Active | Available     |
+| 2001   | B101    | Standard King        | Standard | 900.00      | Active | Available     |
+| 2002   | B102    | Standard Twin        | Standard | 900.00      | Active | Available     |
+| 2003   | B103    | Family Suite         | Family   | 3,200.00    | Active | Booked        |
+| 2004   | B104    | Family Suite Pool    | Family   | 4,200.00    | Active | Available     |
+| 2005   | B105    | Standard King        | Standard | 900.00      | Deleted | Available     |
+| 3001   | V001    | Beachfront Villa     | Luxury   | 5,500.00    | Active | Booked        |
+| 3002   | V002    | Beachfront Villa     | Luxury   | 5,500.00    | Active | Available     |
+| 3003   | V003    | Pool Villa Deluxe    | Luxury   | 6,500.00    | Active | Booked        |
+| 3004   | V004    | Garden Villa         | VIP      | 4,000.00    | Active | Available     |
+| 3005   | V005    | Garden Villa         | VIP      | 4,000.00    | Deleted | Available     |
+====================================================================================================
 
-[1] ROOMS INVENTORY TABLE
-+---------+---------------+------------------------+-------------------+--------------+--------+--------+
-| Room ID | Room Number   | Room Type              | Category          | Price (THB)  | Status | Booked |
-+---------+---------------+------------------------+-------------------+--------------+--------+--------+
-| 1001    | A101          | Deluxe Ocean View      | VIP               | 2500.00      | Active | Yes    |
-| 1002    | A102          | Superior Room          | Standard          | 1500.00      | Active | No     |
-| 1003    | B201          | Suite Pool Villa       | VIP               | 4500.00      | Deleted | No     |
-| 1004    | B202          | Family Suite           | Family            | 3200.00      | Active | No     |
-| 1005    | C301          | Standard Room          | Standard          | 900.00       | Deleted | No     |
-| 2002    | A222          | Super-VIP              | VIP-VIP           | 200000.00    | Active | Yes    |
-| 3003    | C002          | VVIP                   | SUPER-VIP         | 3000000.00   | Deleted | No     |
-+---------+---------------+------------------------+-------------------+--------------+--------+--------+
+Summary (นับเฉพาะสถานะ Active)
+- Total Rooms (records) : 20
+- Active Rooms          : 18
+- Maintenance/Deleted   : 2
+- Currently Booked      : 8
+- Available Now         : 10
 
-[2] SUMMARY STATISTICS (Active Records)
-- Total Rooms Registered : 7
-- Active Rooms           : 4
-- Deleted Rooms          : 3
-- Currently Booked       : 2
-- Available Now          : 2
-- Total Customers        : 2
-- Total Booking Records  : 2
+Room Price Statistics (THB, Active only)
+- Min : 900.00
+- Max : 8,500.00
+- Avg : 3,277.78
 
-[3] PRICE STATISTICS (Active Rooms)
-- Min Price : 1500.00 THB
-- Max Price : 200000.00 THB
-- Avg Price : 51800.00 THB
-
-==========================================================================================
-                                END OF REPORT                                             
-==========================================================================================
+Rooms by Category (Active only)
+- Standard : 7
+- VIP      : 5
+- Luxury   : 4
+- Family   : 2
