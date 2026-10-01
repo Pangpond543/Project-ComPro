@@ -81,8 +81,6 @@ def generate_text_report(output_filename: str = "report.txt") -> None:
     lines.append("Hotel Reservation System - Summary Report (Sample)")
     lines.append(f"Generated At : {now_str}")
     lines.append("App Version  : 1.0")
-    lines.append("Endianness   : Little-endian")
-    lines.append("Encoding     : UTF-8 (fixed-length)")
     lines.append("====================================================================================================")
     lines.append("| RoomID | RoomNum | Room Type            | Category | Price (THB) | Status | Booked Status |")
     lines.append("====================================================================================================")
@@ -103,7 +101,6 @@ def generate_text_report(output_filename: str = "report.txt") -> None:
     lines.append("Room Price Statistics (THB, Active only)")
     lines.append(f"- Min : {min_price:,.2f}")
     lines.append(f"- Max : {max_price:,.2f}")
-    lines.append(f"- Avg : {avg_price:,.2f}\n")
 
     # Group by category
     cats = {}

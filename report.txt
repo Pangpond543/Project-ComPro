@@ -1,5 +1,5 @@
 Hotel Reservation System - Summary Report (Sample)
-Generated At : 2026-09-28 06:13:50
+Generated At : 2026-10-01 10:49:05
 App Version  : 1.0
 Endianness   : Little-endian
 Encoding     : UTF-8 (fixed-length)
